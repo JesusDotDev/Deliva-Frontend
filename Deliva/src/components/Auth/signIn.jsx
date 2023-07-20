@@ -9,12 +9,12 @@ function SignIn () {
     <>
     <div className=''>
       <div className='bg-white py-40 px-40 flex flex-col mx-auto mt-16 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:flex lg:max-w-none'>
-        <div className="">
-          <p className="pb-2 pl-[28rem] text-black flex flex-end">Don't have an account? <span className="bg-red"><a href="/" className="text-green-600 text-right">Sign Up</a></span></p>
+        <div className="mb-10">
           <h1 className="text-black text-bold mb-6">Deliva Pro</h1>
-          <p className="text-black mb-4">Please input your email to login or sign up into your account to enjoy our services.</p>
+          <p className="text-black mb-4">Please input your email to login or sign up into your account to <br /> enjoy our services.</p>
         </div>
         <div className="mb-10 flex flex-col">
+        <p className="pt-2 pl-[28rem] text-black">Don't have an account? <span className="bg-red"><a href="/" className="text-green-600 text-right">Sign Up</a></span></p>
         <label className="text-black text-left" htmlFor="">Email</label>
         <input className='mt-2 mb-3 py-4 px-5 rounded-xl border-solid border-2 border-gray-600' type="email" name="" id="" placeholder='Enter your email address.' />
         <label className="text-black text-left" htmlFor="">Password</label>
@@ -37,7 +37,7 @@ function SignIn () {
           <p className='text-black'>Sign In With Google</p>
           </button>
         </div>
-      <p className='text-black mt-20'>For further support, you may visit the Help Center or contact our customer service.</p>
+      <p className='text-black mt-20'>For further support, you may visit the Help Center or contact <br /> our customer service.</p>
       </div>
     </div>
     </>
