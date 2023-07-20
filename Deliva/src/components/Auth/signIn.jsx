@@ -10,8 +10,8 @@ function SignIn () {
     <div className=''>
       <div className='bg-white py-40 px-40 flex flex-col mx-auto mt-16 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:flex lg:max-w-none'>
         <div className="">
-          <p className="p-5 text-align-right text-black flex flex-row">Don't have an account? <span className="bg-red"><a href="/" className="text-green-600 text-right">Sign Up</a></span></p>
-          <h1 className="text-black text-bold mb-6">Sign In To Deliva</h1>
+          <p className="pb-2 pl-[28rem] text-black flex flex-end">Don't have an account? <span className="bg-red"><a href="/" className="text-green-600 text-right">Sign Up</a></span></p>
+          <h1 className="text-black text-bold mb-6">Deliva Pro</h1>
           <p className="text-black mb-4">Please input your email to login or sign up into your account to enjoy our services.</p>
         </div>
         <div className="mb-10 flex flex-col">
@@ -19,7 +19,7 @@ function SignIn () {
         <input className='mt-2 mb-3 py-4 px-5 rounded-xl border-solid border-2 border-gray-600' type="email" name="" id="" placeholder='Enter your email address.' />
         <label className="text-black text-left" htmlFor="">Password</label>
         <input className='mt-2 mb-3 py-4 px-5 rounded-xl border-solid border-2 border-gray-600' type="password" name="" id="" placeholder='Enter your password.' />
-        <p className="p-5 text-left justify-left text-black flex flex-row">Forgot password?</p>
+        <p className="pt-2 pl-[28rem] text-black">Forgot password? <span className="bg-red"><a href="/" className="text-red-600 text-right">Reset</a></span></p>
         </div>
         <button className=" bg-black mt-35 text-2xl text-white" type="submit">Sign In</button>
 
@@ -31,8 +31,8 @@ function SignIn () {
         </div>
 
 
-        <div className='jsutify-center'>
-          <button className='flex flex-row rounded-3xl bg-white'>
+        <div className='align-center'>
+          <button className='flex border-solid border-2 border-gray-600 flex-row justify-center ml-56 rounded-3xl bg-white'>
           <img className='h-6 w-5 rounded-3xl mr-5' src={googleLogo} alt="" />
           <p className='text-black'>Sign In With Google</p>
           </button>
