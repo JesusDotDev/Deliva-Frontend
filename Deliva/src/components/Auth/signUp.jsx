@@ -1,81 +1,72 @@
-// import { useState } from 'react'
 
-// import { CheckIcon } from '@heroicons/react/20/solid'
-
-// const includedFeatures = [
-//   'Private forum access',
-//   'Member resources',
-//   'Entry to annual conference',
-//   'Official member t-shirt',
-// ]
-
+import googleLogo from '../../assets/googleLogo.png'
+// import Select from './select'
 
 
 function SignUp () {
 
+  const options = ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"];
+const value = "Option 1";
+
   return (
     <>
+    <div className=''>
+      <div className='bg-white py-40 px-40 flex flex-col mx-auto mt-16 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:flex lg:max-w-none'>
+        <div className="mb-10">
+          <h1 className="text-black text-bold mb-6">Deliva Pro</h1>
+          <p className="text-black mb-4">Please input your email to login or sign up into your account to <br /> enjoy our services.</p>
+        </div>
+        <div className="mb-10 flex flex-col">
+        {/* <p className="pt-2 pl-[28rem] text-black">Don't have an account? <span className="bg-red"><a href="/" className="text-green-600 text-right">Sign Up</a></span></p> */}
+        <label className="text-black text-left" htmlFor="">Email</label>
+        <input className='mt-2 mb-3 py-4 px-5 rounded-xl border-solid border-2 border-gray-600' type="email" name="" id="" placeholder='Enter your email address.' />
+        <label className="text-black text-left" htmlFor="">Location</label>
+        {/* <select
+      className={select}
+      value={value}
+      onChange={handleChange}
+    >
+      {options.map((option) => (
+        <option key={option} value={option}>
+          {option}
+        </option>
+      ))}
+    </select> */}
+    <select className="mt-2 mb-3 py-4 px-5 bg-white border-2 border-solid border-gray-600 text-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4">
+  <option className='text-gray-600' selected>Choose An Option</option>
+  <option className='text-gray-600' value="Option 1">Option 1</option>
+  <option className='text-gray-600' value="Option 2">Option 2</option>
+  <option className='text-gray-600' value="Option 3">Option 3</option>
+  <option className='text-gray-600' value="Option 4">Option 4</option>
+  <option className='text-gray-600' value="Option 5">Option 5</option>
+</select>
+        <label className="text-black text-left" htmlFor="">Password</label>
+        <input className='mt-2 mb-3 py-4 px-5 rounded-xl border-solid border-2 border-gray-600' type="password" name="" id="" placeholder='Enter your password.' />
+        <label className="text-black text-left" htmlFor="">Verify Password</label>
+        <input className='mt-2 mb-3 py-4 px-5 rounded-xl border-solid border-2 border-gray-600' type="password" name="" id="" placeholder='Verify your password.' />
+        <p className="pt-2 pl-[28rem] text-black">Have an account? <span className="bg-red"><a href="/" className="text-red-600 text-right">Login</a></span></p>
+        </div>
+        <button className=" bg-black mt-35 text-2xl text-white" type="submit">Sign Up</button>
 
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Deliva</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Sign Up to create an account with us.
-          </p>
+
+        <div className="flex flex-row pb-10 mt-20 justify-center">
+          <hr className="w-20 mt-3 border-solid mr-5 border-2 border-gray-600" />
+          <p className="pb-6 ">OR</p>
+          <hr className="w-20 mt-3 border-solid border-2 border-gray-600 ml-5" />
         </div>
-        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-          <div className="p-8 sm:p-10 lg:flex-auto">
-            <p className='text-2xl font-bold'>Email</p>
-            <input className='mt-4 mb-5 border-red' type="email" name="" id="" placeholder='Enter your email address.' />
-            <p className='text-2xl font-bold'>Password</p>
-            <input className='mt-4' type="email" name="" id="" placeholder='Enter a password.' />
-            {/* <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
-            <p className="mt-6 text-base leading-7 text-gray-600">
-              Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis
-              repellendus etur quidem assumenda.
-            </p> */}
-            <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
-              <div className="h-px flex-auto bg-gray-100" />
-            </div>
-            {/* <ul
-              role="list"
-              className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
-            >
-              {includedFeatures.map((feature) => (
-                <li key={feature} className="flex gap-x-3">
-                  <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                  {feature}
-                </li>
-              ))}
-            </ul> */}
-          </div>
-          <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-            <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-              <div className="mx-auto max-w-xs px-8">
-                <p className="text-base font-semibold text-gray-600">Pay once, own it forever</p>
-                <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                  <span className="text-5xl font-bold tracking-tight text-gray-900">$349</span>
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
-                </p>
-                <a
-                  href="#"
-                  className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Get access
-                </a>
-                <p className="mt-6 text-xs leading-5 text-gray-600">
-                  Invoices and receipts available for easy company reimbursement
-                </p>
-              </div>
-            </div>
-          </div>
+
+
+        <div className='align-center'>
+          <button className='flex border-solid border-2 border-gray-600 flex-row justify-center ml-56 rounded-3xl bg-white'>
+          <img className='h-6 w-5 rounded-3xl mr-5' src={googleLogo} alt="" />
+          <p className='text-black'>Sign Up With Google</p>
+          </button>
         </div>
+      <p className='text-black mt-20'>For further support, you may visit the Help Center or contact <br /> our customer service.</p>
       </div>
     </div>
     </>
   )
 }
 
-export default SignUp
+ export default SignUp
